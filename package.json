@@ -4,7 +4,7 @@
   "files": [
     "dist"
   ],
-  "typings": "dist/index.d.ts",
+  "typings": "dist/table/index.d.ts",
   "main": "./dist/shirkhan-alphabet-table.umd.js",
   "exports": {
     ".": {
