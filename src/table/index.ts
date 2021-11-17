@@ -7,7 +7,7 @@ export interface ITableItem {
 
 export const BOUND_FLAG = "'";
 
-export const HEMZE = "ئ‍";
+export const HEMZE = "ئ";
 
 const table: ITableItem[] = [
   {
