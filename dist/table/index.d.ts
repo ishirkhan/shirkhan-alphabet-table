@@ -5,6 +5,6 @@ export interface ITableItem {
     khan: string;
 }
 export declare const BOUND_FLAG = "'";
-export declare const HEMZE = "\u0626\u200D";
+export declare const HEMZE = "\u0626";
 declare const table: ITableItem[];
 export { table as default };

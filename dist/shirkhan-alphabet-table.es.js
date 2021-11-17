@@ -1,11 +1,11 @@
-const BOUND_FLAG = String.fromCharCode(0);
-const HEMZE = "\u0626\u200D";
+const BOUND_FLAG = "'";
+const HEMZE = "\u0626";
 const table = [
   {
     uchar: "\u0626",
     volwes: false,
     uly: BOUND_FLAG,
-    khan: "?"
+    khan: BOUND_FLAG
   },
   {
     uchar: "\u0627",
