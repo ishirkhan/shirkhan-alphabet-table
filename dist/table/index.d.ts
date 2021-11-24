@@ -4,7 +4,7 @@ export interface ITableItem {
     uly: string;
     khan: string;
 }
-export declare const BOUND_FLAG = "'";
+export declare const BOUNDARY_SYMBOL = "|";
 export declare const HEMZE = "\u0626";
 declare const table: ITableItem[];
 export { table as default };

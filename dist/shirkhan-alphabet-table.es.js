@@ -1,11 +1,11 @@
-const BOUND_FLAG = "'";
+const BOUNDARY_SYMBOL = "|";
 const HEMZE = "\u0626";
 const table = [
   {
     uchar: "\u0626",
     volwes: false,
-    uly: BOUND_FLAG,
-    khan: BOUND_FLAG
+    uly: "'",
+    khan: "'"
   },
   {
     uchar: "\u0627",
@@ -185,7 +185,7 @@ const table = [
     uchar: "\u06BE",
     volwes: false,
     uly: "h",
-    khan: "x"
+    khan: "wh"
   },
   {
     uchar: "\u06CB",
@@ -200,4 +200,4 @@ const table = [
     khan: "y"
   }
 ];
-export { BOUND_FLAG, HEMZE, table as default };
+export { BOUNDARY_SYMBOL, HEMZE, table as default };

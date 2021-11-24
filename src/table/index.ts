@@ -5,7 +5,7 @@ export interface ITableItem {
   khan: string;
 }
 
-export const BOUND_FLAG = "'";
+export const BOUNDARY_SYMBOL = "|"; // 终止符: 内容中出现英语等内容时为了和uly区分使用终止符来包括内容，使得今后的转换等操作能够识别边界,如： ademler |人民 or people in english| dep yazimiz
 
 export const HEMZE = "ئ";
 
@@ -13,8 +13,8 @@ const table: ITableItem[] = [
   {
     uchar: "ئ",
     volwes: false,
-    uly: BOUND_FLAG,
-    khan: BOUND_FLAG,
+    uly: "'",
+    khan: "'",
   },
   {
     uchar: "ا",
@@ -194,7 +194,7 @@ const table: ITableItem[] = [
     uchar: "ھ",
     volwes: false,
     uly: "h",
-    khan: "x",
+    khan: "wh",
   },
   {
     uchar: "ۋ",
