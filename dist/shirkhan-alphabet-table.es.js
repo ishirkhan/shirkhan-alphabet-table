@@ -1,4 +1,4 @@
-const BOUNDARY_SYMBOL = "|";
+const BOUNDARY_SYMBOL = "/";
 const HEMZE = "\u0626";
 const table = [
   {
