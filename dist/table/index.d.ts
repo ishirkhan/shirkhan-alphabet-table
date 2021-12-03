@@ -1,8 +1,9 @@
 export interface ITableItem {
     uchar: string;
-    volwes: boolean;
     uly: string;
     khan: string;
+    volwes: boolean;
+    punctuation: boolean;
 }
 /**
  * 终止符: 内容中出现英语等内容时为了和uly区分使用终止符来包括内容，使得今后的转换等操作能够识别边界,如： ademler /人民 or people in english/ dep yazimiz
@@ -13,5 +14,7 @@ export interface ITableItem {
  */
 export declare const BOUNDARY_SYMBOL = "/";
 export declare const HEMZE = "\u0626";
-declare const table: ITableItem[];
+export declare const URGHU = "`";
+export declare const FORMATMAEK = "'";
+export declare const table: ITableItem[];
 export { table as default };

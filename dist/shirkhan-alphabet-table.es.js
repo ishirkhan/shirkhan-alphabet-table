@@ -1,203 +1,329 @@
 const BOUNDARY_SYMBOL = "/";
 const HEMZE = "\u0626";
+const URGHU = "`";
+const FORMATMAEK = "'";
 const table = [
   {
     uchar: "\u0626",
+    uly: "x",
+    khan: "x",
     volwes: false,
-    uly: "'",
-    khan: "'"
+    punctuation: false
   },
   {
     uchar: "\u0627",
-    volwes: true,
     uly: "a",
-    khan: "a"
+    khan: "a",
+    volwes: true,
+    punctuation: false
   },
   {
     uchar: "\u06D5",
-    volwes: true,
     uly: "e",
-    khan: "e"
+    khan: "e",
+    volwes: true,
+    punctuation: false
   },
   {
     uchar: "\u06D0",
-    volwes: true,
     uly: "\xEB",
-    khan: "eh"
+    khan: "eh",
+    volwes: true,
+    punctuation: false
   },
   {
     uchar: "\u0649",
-    volwes: true,
     uly: "i",
-    khan: "i"
+    khan: "i",
+    volwes: true,
+    punctuation: false
   },
   {
     uchar: "\u0648",
-    volwes: true,
     uly: "o",
-    khan: "o"
+    khan: "o",
+    volwes: true,
+    punctuation: false
   },
   {
     uchar: "\u06C7",
-    volwes: true,
     uly: "u",
-    khan: "u"
+    khan: "u",
+    volwes: true,
+    punctuation: false
   },
   {
     uchar: "\u06C6",
-    volwes: true,
     uly: "\xF6",
-    khan: "c"
+    khan: "c",
+    volwes: true,
+    punctuation: false
   },
   {
     uchar: "\u06C8",
-    volwes: true,
     uly: "\xFC",
-    khan: "v"
+    khan: "v",
+    volwes: true,
+    punctuation: false
   },
   {
     uchar: "\u0628",
-    volwes: false,
     uly: "b",
-    khan: "b"
+    khan: "b",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u067E",
-    volwes: false,
     uly: "p",
-    khan: "p"
+    khan: "p",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u062A",
-    volwes: false,
     uly: "t",
-    khan: "t"
+    khan: "t",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u062C",
-    volwes: false,
     uly: "j",
-    khan: "j"
+    khan: "j",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0686",
-    volwes: false,
     uly: "ch",
-    khan: "ch"
+    khan: "ch",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u062E",
-    volwes: false,
     uly: "x",
-    khan: "kh"
+    khan: "kh",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u062F",
-    volwes: false,
     uly: "d",
-    khan: "d"
+    khan: "d",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0631",
-    volwes: false,
     uly: "r",
-    khan: "r"
+    khan: "r",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0632",
-    volwes: false,
     uly: "z",
-    khan: "z"
+    khan: "z",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0698",
-    volwes: false,
     uly: "zh",
-    khan: "zh"
+    khan: "zh",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0633",
-    volwes: false,
     uly: "s",
-    khan: "s"
+    khan: "s",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0634",
-    volwes: false,
     uly: "sh",
-    khan: "sh"
+    khan: "sh",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u063A",
-    volwes: false,
     uly: "gh",
-    khan: "gh"
+    khan: "gh",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0642",
-    volwes: false,
     uly: "q",
-    khan: "q"
+    khan: "q",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0641",
-    volwes: false,
     uly: "f",
-    khan: "f"
+    khan: "f",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0643",
-    volwes: false,
     uly: "k",
-    khan: "k"
+    khan: "k",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u06AF",
-    volwes: false,
     uly: "g",
-    khan: "g"
+    khan: "g",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u06AD",
-    volwes: false,
     uly: "ng",
-    khan: "ng"
+    khan: "ng",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0644",
-    volwes: false,
     uly: "l",
-    khan: "l"
+    khan: "l",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0645",
-    volwes: false,
     uly: "m",
-    khan: "m"
+    khan: "m",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u0646",
-    volwes: false,
     uly: "n",
-    khan: "n"
+    khan: "n",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u06BE",
-    volwes: false,
     uly: "h",
-    khan: "wh"
+    khan: "wh",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u06CB",
-    volwes: false,
     uly: "w",
-    khan: "w"
+    khan: "w",
+    volwes: false,
+    punctuation: false
   },
   {
     uchar: "\u064A",
-    volwes: false,
     uly: "y",
-    khan: "y"
+    khan: "y",
+    volwes: false,
+    punctuation: false
+  },
+  {
+    uchar: "\u061F",
+    uly: "?",
+    khan: "?",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "(",
+    uly: ")",
+    khan: ")",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "{",
+    uly: "}",
+    khan: "}",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "}",
+    uly: "{",
+    khan: "{",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "[",
+    uly: "]",
+    khan: "]",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "]",
+    uly: "[",
+    khan: "[",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "<",
+    uly: ">",
+    khan: ">",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: ">",
+    uly: "<",
+    khan: "<",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "!",
+    uly: "!",
+    khan: "!",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: ".",
+    uly: ".",
+    khan: ".",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: ":",
+    uly: ":",
+    khan: ":",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "-",
+    uly: "-",
+    khan: "-",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    uchar: "$",
+    uly: "$",
+    khan: "$",
+    volwes: false,
+    punctuation: true
   }
 ];
-export { BOUNDARY_SYMBOL, HEMZE, table as default };
+export { BOUNDARY_SYMBOL, FORMATMAEK, HEMZE, URGHU, table as default, table };
