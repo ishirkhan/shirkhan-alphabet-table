@@ -1,5 +1,5 @@
 export interface ITableItem {
-    uchar: string;
+    ug: string;
     uly: string;
     khan: string;
     volwes: boolean;
