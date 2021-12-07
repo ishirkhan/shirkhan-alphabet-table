@@ -12,9 +12,10 @@ export interface ITableItem {
  * 当使用 | 为分界符时，在编写markdown发现和table冲突，面临在table等特殊场景中提供其他不冲突的符号。
  * 因我们以后的大方向是 markdown为主，所以现在吧分界符从| 转换成了 / 以后遇到冲突，针对特殊场景提供特殊替代方案。
  */
-export declare const BOUNDARY_SYMBOL = "/";
+export declare const TRANSLATIONAL_MARK = "/";
+export declare const SEPARATE_MARK = "h";
+export declare const SYLLABIFY_MARK = "`";
+export declare const READABILITY_MARK = "'";
 export declare const HEMZE = "\u0626";
-export declare const URGHU = "`";
-export declare const FORMATMAEK = "'";
 export declare const table: ITableItem[];
 export { table as default };

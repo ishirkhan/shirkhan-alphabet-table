@@ -1,7 +1,8 @@
-const BOUNDARY_SYMBOL = "/";
+const TRANSLATIONAL_MARK = "/";
+const SEPARATE_MARK = "h";
+const SYLLABIFY_MARK = "`";
+const READABILITY_MARK = "'";
 const HEMZE = "\u0626";
-const URGHU = "`";
-const FORMATMAEK = "'";
 const table = [
   {
     ug: "\u0626",
@@ -214,6 +215,13 @@ const table = [
     punctuation: false
   },
   {
+    ug: "\u0646",
+    uly: "n",
+    khan: "n" + SEPARATE_MARK,
+    volwes: false,
+    punctuation: false
+  },
+  {
     ug: "\u06BE",
     uly: "h",
     khan: "wh",
@@ -242,4 +250,4 @@ const table = [
     punctuation: true
   }
 ];
-export { BOUNDARY_SYMBOL, FORMATMAEK, HEMZE, URGHU, table as default, table };
+export { HEMZE, READABILITY_MARK, SEPARATE_MARK, SYLLABIFY_MARK, TRANSLATIONAL_MARK, table as default, table };
