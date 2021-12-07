@@ -13,11 +13,13 @@ export interface ITableItem {
  * 当使用 | 为分界符时，在编写markdown发现和table冲突，面临在table等特殊场景中提供其他不冲突的符号。
  * 因我们以后的大方向是 markdown为主，所以现在吧分界符从| 转换成了 / 以后遇到冲突，针对特殊场景提供特殊替代方案。
  */
-export const BOUNDARY_SYMBOL = "/";
+export const TRANSLATIONAL_MARK = "/"; // 转义符 用来控制转义不转义内容，包裹在中间的年内容不转义
+export const SEPARATE_MARK = "h"; // 当组合字符出现冲突时优先使用此符号来分隔，如enge ehlish(注册、备案) 中的 n,g,ng 出现了冲突，将变成 enhge ehlish
+
+export const SYLLABIFY_MARK = "`"; // 分音节符 adem`ler`ning
+export const READABILITY_MARK = "'"; //易读标记，用于提高单词的易读性 tash'eynek, tel'et 一个辅音结束的音节后面的音节从原因开始时使用
 
 export const HEMZE = "ئ"; // Hemze
-export const URGHU = "`"; // Urghut  ana  `anar
-export const FORMATMAEK = "'"; // tash'eynek, tel'et
 
 export const table: ITableItem[] = [
   {
@@ -227,6 +229,13 @@ export const table: ITableItem[] = [
     ug: "ن",
     uly: "n",
     khan: "n",
+    volwes: false,
+    punctuation: false,
+  },
+  {
+    ug: "ن",
+    uly: "n",
+    khan: "nh", // 用于 ng n g 三个字母的冲突 如: vnge ehlish-> vnhge ehlish
     volwes: false,
     punctuation: false,
   },
