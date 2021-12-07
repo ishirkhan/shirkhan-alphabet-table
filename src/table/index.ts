@@ -235,7 +235,7 @@ export const table: ITableItem[] = [
   {
     ug: "ن",
     uly: "n",
-    khan: "nh", // 用于 ng n g 三个字母的冲突 如: vnge ehlish-> vnhge ehlish
+    khan: "n" + SEPARATE_MARK, // nh 用于 ng n g 三个字母的冲突 如: vnge ehlish-> vnhge ehlish
     volwes: false,
     punctuation: false,
   },
