@@ -1,19 +1,22 @@
-# [table](./table.md)
+## `shirkhan-alphabet-table`
 
-# 计划
+bv tvr shirkhan ehlipbesining wherip jediwilini asas qilip bashqa ishlitish urunlirida clchem birliki whasillash vchvn teyyarlanhghan bulup, `javascript` tilini asas qilidighan tvrler aldin mushu tvrni ishlitip munasiwetlik uchurlargha ehrishishi tewissiye qilinidu ;
 
-# 开发和发布
+bu tvr asas qilghan ehlipbe jediwili wheqqidiki tehkhimu kcp uchurlargha ehrishmekchi bolsingiz buyerdin kvrvng: [shirkhan alphabet](https://gitee.com/silvaq/shirkhan-alphabet)
 
-## 开发
+## ishlitish usuli
 
-- 启动本地开发环境
+```typescript
+import type { ITableItem, ITableAlphaType } from "./table";
+import { table, HEMZE, TRANSLATIONAL_MARK } from "./table";
 
-  > yarn start
+const khanChars = table.map((item: ITableItem) => item.khan);
+console.log("khanChars", khanChars);
 
-## 编译
+const khan: ITableAlphaType = "khan";
 
-> yarn build
+console.log("khan", khan);
+console.log("TRANSLATIONAL_MARK", TRANSLATIONAL_MARK);
 
-## 测试
-
-> yarn test
+console.log("HEMZE", HEMZE);
+```

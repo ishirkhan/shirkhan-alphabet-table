@@ -1,3 +1,4 @@
+export declare type ITableAlphaType = "khan" | "ug" | "uly";
 export interface ITableItem {
     ug: string;
     uly: string;

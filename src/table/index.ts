@@ -1,3 +1,5 @@
+export type ITableAlphaType = "khan" | "ug" | "uly"; // 所支持字母表种类
+
 export interface ITableItem {
   ug: string;
   uly: string;
