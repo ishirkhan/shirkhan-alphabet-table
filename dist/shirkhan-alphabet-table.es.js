@@ -248,6 +248,20 @@ const table = [
     khan: "?",
     volwes: false,
     punctuation: true
+  },
+  {
+    ug: "\u060C",
+    uly: ",",
+    khan: ",",
+    volwes: false,
+    punctuation: true
+  },
+  {
+    ug: "\u061B",
+    uly: ";",
+    khan: ";",
+    volwes: false,
+    punctuation: true
   }
 ];
 export { HEMZE, READABILITY_MARK, SEPARATE_MARK, SYLLABIFY_MARK, TRANSLATIONAL_MARK, table as default, table };
