@@ -121,4 +121,4 @@ out
 # Neutrino build directory
 build
 types
-dist
+dist/
