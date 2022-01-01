@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://gitee.com/silvaq/shirkhan-alphabet-table/compare/v1.3.0...v1.3.1) (2022-01-01)
+
+
+### Bug Fixes
+
+* 误删nh字符修复 ([c8322a5](https://gitee.com/silvaq/shirkhan-alphabet-table/commit/c8322a5fd4f3f6b0c900588a60cf70aa8de08f35))
+
 ## [1.3.0](https://gitee.com/silvaq/shirkhan-alphabet-table/compare/v1.2.0...v1.3.0) (2022-01-01)
 
 
