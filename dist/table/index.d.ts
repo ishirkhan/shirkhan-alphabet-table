@@ -1,8 +1,9 @@
-export declare type ITableAlphaType = "khan" | "ug" | "uly";
+export declare type ITableAlphaType = "khan" | "khanUz" | "ug" | "uly";
 export interface ITableItem {
     ug: string;
     uly: string;
     khan: string;
+    khanUz: string;
     volwes: boolean;
     punctuation: boolean;
 }
