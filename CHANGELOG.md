@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://gitee.com/silvaq/shirkhan-alphabet-table/compare/v1.2.0...v1.3.0) (2022-01-01)
+
+
+### Features
+
+* dist 目录删除 ([224066b](https://gitee.com/silvaq/shirkhan-alphabet-table/commit/224066b4fbfb15903fbd7f1521dd5ed5a3b21acb))
+* 新增了ng的易读字母,去掉了nh组合字符,现在不会出现n+g=ng冲突 ([8c89e3b](https://gitee.com/silvaq/shirkhan-alphabet-table/commit/8c89e3b9e9ea3e0d4f85dbca586a046a91087f87))
+* 生成的库文件存放目录调整 ([52eb426](https://gitee.com/silvaq/shirkhan-alphabet-table/commit/52eb426ee23b2d8435ca10864451fe6de7117e15))
+
 ## 1.2.0 (2022-01-01)
 
 
