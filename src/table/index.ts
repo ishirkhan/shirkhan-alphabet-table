@@ -237,7 +237,7 @@ export const table: ITableItem[] = [
     ug: "ڭ",
     uly: "ng",
     khan: "ng",
-    khanUz: "ng", //ŋ
+    khanUz: "ñ",
     volwes: false,
     punctuation: false,
   },
@@ -262,14 +262,6 @@ export const table: ITableItem[] = [
     uly: "n",
     khan: "n",
     khanUz: "n",
-    volwes: false,
-    punctuation: false,
-  },
-  {
-    ug: "ن",
-    uly: "n",
-    khan: "n" + SEPARATE_MARK, // nh 用于 ng n g 三个字母的冲突 如: vnge ehlish-> vnhge ehlish
-    khanUz: "n" + READABILITY_MARK, // nh 用于 ng n g 三个字母的冲突 如: vnge ehlish-> vnhge ehlish
     volwes: false,
     punctuation: false,
   },
