@@ -9,7 +9,7 @@ module.exports = defineConfig({
     lib: {
       name: "shirkhan-alphabet-table",
       entry: path.resolve(__dirname, "src/table/index.ts"),
-      fileName: (format) => `shirkhan-alphabet-table.${format}.js`,
+      fileName: (format) => `table/shirkhan-alphabet-table.${format}.js`,
     },
     rollupOptions: {},
   },

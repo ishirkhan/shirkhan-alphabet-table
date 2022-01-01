@@ -5,11 +5,11 @@
     "dist"
   ],
   "typings": "dist/table/index.d.ts",
-  "main": "./dist/shirkhan-alphabet-table.umd.js",
+  "main": "./dist/table/shirkhan-alphabet-table.umd.js",
   "exports": {
     ".": {
-      "import": "./dist/shirkhan-alphabet-table.es.js",
-      "require": "./dist/shirkhan-alphabet-table.umd.js"
+      "import": "./dist/table/shirkhan-alphabet-table.es.js",
+      "require": "./dist/table/shirkhan-alphabet-table.umd.js"
     }
   },
   "scripts": {
