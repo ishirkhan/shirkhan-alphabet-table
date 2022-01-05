@@ -84,7 +84,7 @@ export const table: ITableItem[] = [
   {
     ug: "ۆ",
     uly: "ö",
-    khan: "c",
+    khan: "oh",
     khanUz: "ô",
     volwes: true,
     punctuation: false,
@@ -141,7 +141,7 @@ export const table: ITableItem[] = [
     ug: "خ",
     uly: "x",
     khan: "kh",
-    khanUz: "h",
+    khanUz: "ħ",
     volwes: false,
     punctuation: false,
   },
@@ -172,8 +172,8 @@ export const table: ITableItem[] = [
   {
     ug: "ژ",
     uly: "zh",
-    khan: "zh",
-    khanUz: "ž", // 因未找到 ^ 帽子的，用了现在的反过来的
+    khan: "jh",
+    khanUz: "ĵ", // 因未找到 ^ 帽子的，用了现在的反过来的
     volwes: false,
     punctuation: false,
   },
