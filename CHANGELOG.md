@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://gitee.com/silvaq/shirkhan-alphabet-table/compare/v1.3.1...v1.4.0) (2022-01-05)
+
+
+### Features
+
+* khan-uz 新增了 ch,kh,zh,sh,gh 五个字符的易读字符 ([1dd45b3](https://gitee.com/silvaq/shirkhan-alphabet-table/commit/1dd45b30736d6b9ea99052971ed05627b762dfbe))
+
 ### [1.3.1](https://gitee.com/silvaq/shirkhan-alphabet-table/compare/v1.3.0...v1.3.1) (2022-01-01)
 
 
