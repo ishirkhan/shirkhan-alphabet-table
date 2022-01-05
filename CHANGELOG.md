@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://gitee.com/silvaq/shirkhan-alphabet-table/compare/v1.4.0...v1.5.0) (2022-01-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* 因规则多样化,替代字符找不到相同规则的等原因khan的c,zh改变成oh,jh.以及kh的uz变成ħ
+
+### improvement
+
+* 因规则多样化,替代字符找不到相同规则的等原因khan的c,zh改变成oh,jh.以及kh的uz变成ħ ([1bbf1f0](https://gitee.com/silvaq/shirkhan-alphabet-table/commit/1bbf1f090ea2ee0fa62178cccd1634550b306685))
+
 ## [1.4.0](https://gitee.com/silvaq/shirkhan-alphabet-table/compare/v1.3.1...v1.4.0) (2022-01-05)
 
 
